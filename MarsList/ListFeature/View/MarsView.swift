@@ -7,19 +7,22 @@
 
 import UIKit
 
-/// MarsViewModel with the name of the text that we need to show in this View.
-struct MarsViewModel {
-    /// Name of the text that we need into the view.
-    var name: String
-}
-
 class MarsView: UIView {
     
     // MARK: Private UI Components
     
     private let nameLabel: UILabel = {
         let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
+    }()
+    
+    private let imageFavorite: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = UIImage(named: "notFavorite")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     // MARK: Public initializers
@@ -38,17 +41,25 @@ class MarsView: UIView {
     
     public func configure(_ viewModel: MarsViewModel) {
         nameLabel.text = viewModel.name
+        imageFavorite.image = viewModel.isFavorite ? UIImage(named: "favorite") : UIImage(named: "notFavorite")
     }
     
     private func setupUI() {
         addSubview(nameLabel)
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(imageFavorite)
         
         NSLayoutConstraint.activate([
+            imageFavorite.heightAnchor.constraint(equalToConstant: 30),
+            imageFavorite.widthAnchor.constraint(equalToConstant: 30),
+            
+            imageFavorite.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            imageFavorite.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            imageFavorite.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
+            
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 8),
-            nameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 8),
+            nameLabel.trailingAnchor.constraint(equalTo: imageFavorite.leadingAnchor, constant: -16),
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            nameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
         ])
     }
 }

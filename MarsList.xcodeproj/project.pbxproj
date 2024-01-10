@@ -16,6 +16,7 @@
 		8765005E2B4E287C0018F078 /* Mars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8765005D2B4E287C0018F078 /* Mars.swift */; };
 		876500642B4E29590018F078 /* MarsPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500632B4E29590018F078 /* MarsPhotoTableViewCell.swift */; };
 		876500662B4E298A0018F078 /* MarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500652B4E298A0018F078 /* MarsView.swift */; };
+		876500682B4E32310018F078 /* MarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500672B4E32310018F078 /* MarsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8765005D2B4E287C0018F078 /* Mars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars.swift; sourceTree = "<group>"; };
 		876500632B4E29590018F078 /* MarsPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoTableViewCell.swift; sourceTree = "<group>"; };
 		876500652B4E298A0018F078 /* MarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsView.swift; sourceTree = "<group>"; };
+		876500672B4E32310018F078 /* MarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				8765005D2B4E287C0018F078 /* Mars.swift */,
+				876500672B4E32310018F078 /* MarsViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				876500452B4E1F710018F078 /* AppDelegate.swift in Sources */,
 				876500662B4E298A0018F078 /* MarsView.swift in Sources */,
 				876500472B4E1F710018F078 /* SceneDelegate.swift in Sources */,
+				876500682B4E32310018F078 /* MarsViewModel.swift in Sources */,
 				8765005B2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift in Sources */,
 				8765005E2B4E287C0018F078 /* Mars.swift in Sources */,
 			);

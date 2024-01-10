@@ -39,7 +39,7 @@ class ListMarsPhotosTableViewController: UITableViewController {
             for: indexPath
         ) as? MarsPhotoTableViewCell {
             let mars = marsList[indexPath.row]
-            cell.configure(viewModel: .init(name: mars.title))
+            cell.configure(viewModel: .init(name: mars.title, isFavorite: false))
             return cell
         }
         
