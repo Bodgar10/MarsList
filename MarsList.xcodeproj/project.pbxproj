@@ -13,6 +13,9 @@
 		876500512B4E1F720018F078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8765004F2B4E1F720018F078 /* LaunchScreen.storyboard */; };
 		876500592B4E24140018F078 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500582B4E24140018F078 /* CustomView.swift */; };
 		8765005B2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8765005A2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift */; };
+		8765005E2B4E287C0018F078 /* Mars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8765005D2B4E287C0018F078 /* Mars.swift */; };
+		876500642B4E29590018F078 /* MarsPhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500632B4E29590018F078 /* MarsPhotoTableViewCell.swift */; };
+		876500662B4E298A0018F078 /* MarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500652B4E298A0018F078 /* MarsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		876500522B4E1F720018F078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		876500582B4E24140018F078 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		8765005A2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMarsPhotosTableViewController.swift; sourceTree = "<group>"; };
+		8765005D2B4E287C0018F078 /* Mars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mars.swift; sourceTree = "<group>"; };
+		876500632B4E29590018F078 /* MarsPhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotoTableViewCell.swift; sourceTree = "<group>"; };
+		876500652B4E298A0018F078 /* MarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		876500432B4E1F710018F078 /* MarsList */ = {
 			isa = PBXGroup;
 			children = (
+				876500602B4E28A70018F078 /* ListFeature */,
 				876500442B4E1F710018F078 /* AppDelegate.swift */,
 				876500462B4E1F710018F078 /* SceneDelegate.swift */,
 				8765004D2B4E1F720018F078 /* Assets.xcassets */,
 				8765004F2B4E1F720018F078 /* LaunchScreen.storyboard */,
 				876500522B4E1F720018F078 /* Info.plist */,
 				876500582B4E24140018F078 /* CustomView.swift */,
-				8765005A2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift */,
 			);
 			path = MarsList;
+			sourceTree = "<group>";
+		};
+		8765005C2B4E28710018F078 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8765005D2B4E287C0018F078 /* Mars.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8765005F2B4E28A20018F078 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				876500632B4E29590018F078 /* MarsPhotoTableViewCell.swift */,
+				876500652B4E298A0018F078 /* MarsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		876500602B4E28A70018F078 /* ListFeature */ = {
+			isa = PBXGroup;
+			children = (
+				876500612B4E28B70018F078 /* Controller */,
+				8765005F2B4E28A20018F078 /* View */,
+				8765005C2B4E28710018F078 /* Models */,
+			);
+			path = ListFeature;
+			sourceTree = "<group>";
+		};
+		876500612B4E28B70018F078 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8765005A2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				876500592B4E24140018F078 /* CustomView.swift in Sources */,
+				876500642B4E29590018F078 /* MarsPhotoTableViewCell.swift in Sources */,
 				876500452B4E1F710018F078 /* AppDelegate.swift in Sources */,
+				876500662B4E298A0018F078 /* MarsView.swift in Sources */,
 				876500472B4E1F710018F078 /* SceneDelegate.swift in Sources */,
 				8765005B2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift in Sources */,
+				8765005E2B4E287C0018F078 /* Mars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
