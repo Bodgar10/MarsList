@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8758BC382B50BC0F0076091E /* MarsPhotosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8758BC372B50BC0F0076091E /* MarsPhotosAPI.swift */; };
 		876500452B4E1F710018F078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500442B4E1F710018F078 /* AppDelegate.swift */; };
 		876500472B4E1F710018F078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876500462B4E1F710018F078 /* SceneDelegate.swift */; };
 		8765004E2B4E1F720018F078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8765004D2B4E1F720018F078 /* Assets.xcassets */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8758BC352B50BAED0076091E /* MarsPhotos.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = MarsPhotos.geojson; sourceTree = "<group>"; };
+		8758BC372B50BC0F0076091E /* MarsPhotosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhotosAPI.swift; sourceTree = "<group>"; };
 		876500412B4E1F710018F078 /* MarsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		876500442B4E1F710018F078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		876500462B4E1F710018F078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8758BC362B50BBE40076091E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8758BC372B50BC0F0076091E /* MarsPhotosAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		876500382B4E1F710018F078 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +107,7 @@
 		876500602B4E28A70018F078 /* ListFeature */ = {
 			isa = PBXGroup;
 			children = (
+				8758BC362B50BBE40076091E /* API */,
 				876500612B4E28B70018F078 /* Controller */,
 				8765005F2B4E28A20018F078 /* View */,
 				8765005C2B4E28710018F078 /* Models */,
@@ -107,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8765005A2B4E27CE0018F078 /* ListMarsPhotosTableViewController.swift */,
+				8758BC352B50BAED0076091E /* MarsPhotos.geojson */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				876500592B4E24140018F078 /* CustomView.swift in Sources */,
+				8758BC382B50BC0F0076091E /* MarsPhotosAPI.swift in Sources */,
 				876500642B4E29590018F078 /* MarsPhotoTableViewCell.swift in Sources */,
 				876500452B4E1F710018F078 /* AppDelegate.swift in Sources */,
 				876500662B4E298A0018F078 /* MarsView.swift in Sources */,

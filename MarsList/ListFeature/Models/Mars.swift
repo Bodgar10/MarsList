@@ -9,4 +9,5 @@ import Foundation
 
 struct Mars {
     let title: String
+    let isFavorite: Bool
 }
